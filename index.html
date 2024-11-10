@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Concepts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup_style.css">
+</head>
+<body>
+<div class="big_box">
+
+    <!-- Full-screen intro section -->
+    <section class="intro-section">
+        <div class="intro-content">
+            <h1 class="title">Physics Concepts</h1>
+            <p class="description">Explore key physics concepts like Dynamics, Momentum, and Kinematics. Hover over each option to read more about each concept, including essential formulas and definitions.</p>
+            
+            <div class="simulation-container">
+                <a href="simulation.html" class="start-simulation">Start Simulation</a>
+            </div>
+
+            <div class="scroll-indicator" onclick="scrollToTopics()">
+                <p class="scroll-text">Scroll to explore topics</p>
+                <a href="#">
+                    <div id="mouse-scroll">
+                      <div class="mouse">
+                        <div class="mouse-in"></div>
+                      </div>
+                      <div>
+                          <span class="down-arrow-1"></span>
+                          <span class="down-arrow-2"></span>
+                       </div>
+                    </div>
+                </a> <!-- Custom scroll icon -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Second full-screen section with physics topics -->
+    <section class="topics-section">
+        <div class="topics-content">
+            <h2 class="title-learn">Learn about Physics</h2>
+            <p class="desc-physics">Select the physics topic you want to explore</p>
+            <!-- Content for Dynamics, Kinematics, and Momentum goes here, similar to before -->
+            <div class="concepts-container">
+                <div class="simulation-choice">
+                    <div class="container-choice">
+                        <span class="name-material">Dynamics</span>
+                    </div>
+                    <div class="information-tip">
+                        <div class="tooltip">
+                            <span class="close-btn" onclick="masterclose(event)">✕</span>
+                            <h2>Dynamics</h2>
+                            <p>Dynamics is the branch of physics that studies how <span class="highlight-text force">forces</span> affect motion. It emphasizes how forces cause changes in an object’s velocity or direction based on <span class="highlight-text newton">Newton's laws</span>. The core formula is:</p>
+                            <p><strong>F = m * a</strong></p>
+                            <ul>
+                                <li><strong>F</strong> = force (N)</li>
+                                <li><strong>m</strong> = mass (kg)</li>
+                                <li><strong>a</strong> = acceleration (m/s²)</li>
+                            </ul>
+                            <span class="tips-text">Press the highlighted text to explore</span>
+
+                        </div>
+
+                        <div class="tooltip-secondary">
+                            <span class="close-btn-secondary" onclick="closeTooltip(event)">✕</span>
+                            <h2>What is force?</h2>
+                            <p>Force in physics is any interaction that can cause a mass object to experience a change in motion, either in direction or geometric construction.</p>
+                            <p><br>Types of forces that will be discussed in this material : </p>
+                                <p><span class="highlight-text friction">- Friction Force</span></p>
+                                <p><span class="highlight-text">- Normal Force</span></p>
+                                <p><span class="highlight-text">- External Force</span></p>
+                                <p><span class="highlight-text">- Gravitational Force</span></p>
+                                <p><span class="highlight-text">- Rope Tension Force</span></p>
+                            <span class="tips-text">Press the highlighted text to explore</span>
+                        </div>
+
+                        <div class="friction-force">
+                            <span class="close-btn-secondary" onclick="closeTooltip(event)">✕</span>
+                            <h2>Friction Force</h2>
+                            <img src="asset/placeholder.png" class="image-force" alt="Friction Force"/>
+                            <p> In general, every moving object will experience friction. Friction can arise because two surfaces of objects touch each other. From this contact, movement occurs in two different directions, causing an incident.</p>
+                            <p><br>Frictional force is divided into two types, namely static friction force and kinetic friction force.</p>
+                                <p><br><span class="highlight-text friction-static"><b>Static Friction Force</b></span></p>
+                                <p>Static friction is the friction force that acts on an object that is initially still until it is about to move. As long as the pushing/pulling force of the object is less than its static friction force, the object will remain still and not move.</p>
+                                <p><span class="highlight-text friction-kinetic">Kinetic Friction Force</span></p>
+                                <p>Kinetic friction is the friction force that acts on an object that is moving, and its direction is always opposite to the direction of the object's motion.</p>
+                            <span class="tips-text">Press the highlighted text to explore</span>
+                        </div>
+
+                        <div class="newton-container">
+                            <span class="close-btn-secondary" onclick="closeTooltip(event)">✕</span>
+                            <h2>Newton Laws</h2>
+                            <p>Newton's laws of motion are laws of physics that describe the displacement of an object as a result of the relationship between the magnitude and distance of the forces acting on the object.</p>
+                            <p><br>Newton's law has 3 laws consisting of :</p>
+                                <p><span class="highlight-text first">- Newton's First Law</span></p>
+                                <p><span class="highlight-text second">- Newton's Second Law</span></p>
+                                <p><span class="highlight-text third">- Newton's Third Law</span></p>
+                            <span class="tips-text">Press the highlighted text to explore</span>
+                        </div>
+
+                        <div class="first-newton">
+                            <span class="close-btn-secondary" onclick="closeTooltip(event)">✕</span>
+                            <h2>First Newton Laws</h2>
+                            <p class="p-newton">The formula for Newton's First Law is: <strong><br>∑F = 0 or Resultant Force (kg m/s2)</strong></p>
+                            <p class="p-newton"><br>Description: <br>Object at rest <strong>v = 0 m/s</strong> <br>Object moving in a straight line at a <strong>constant speed (v = constant)</strong><br></p>
+                            <p class="example-question" onclick="firstquestion()">View example questions</p>
+                        </div>
+
+                        <div class="second-newton">
+                            <span class="close-btn-secondary" onclick="closeTooltip(event)">✕</span>
+                            <h2>Secondary Newton Laws</h2>
+                            <p class="p-newton">The formula for Newton's Second Law is: <strong><br>F = m.a</strong></p>
+                            <p class="p-newton"><br>Description: <br><strong>F</strong> is the force (N)<br><strong>m</strong> is the mass of the object (kg) <br><strong>a</strong> is the acceleration (m/s<sup>2</sup>).<br></p>
+                            <p class="example-question" onclick="secondquestion()">View example questions</p>
+                        </div>
+
+                        <div class="third-newton">
+                            <span class="close-btn-secondary" onclick="closeTooltip(event)">✕</span>
+                            <h2>Third Newton Laws</h2>
+                            <p class="p-newton">His third law states that for every action (force) in nature there is an equal and opposite reaction. If object A exerts a force on object B, object B also exerts an equal and opposite force on object A. In other words, forces result from interactions. from there Newton's Third Law can be written with the equation <strong>F<sub>action</sub> = - F<sub>reaction</sub></strong><br><br>There are three types of Newton's 3rd Law formula:</p>
+                            <p class="p-newton"><br><strong>1. Friction force formula</strong> : Fg = u x N<br>Description : <br><b>Fg</b> = friction force (N)<br><b>u</b> = coefficient of friction<br><b>N</b> = Normal force (N).</p>
+                            <p class="p-newton"><br><strong>2. Weight force formula</strong> : w = m x g<br>Description : <br><b>w</b> = weight force (N)<br><b>m</b> = mass of an object (kg)<br><b>g</b> = Gravity (m/s<sup>2</sup>).</p>
+                            <p class="p-newton"><br><strong>3. Spesific gravity formula</strong> : s = p x g<br>Description : <br><b>s</b> = spesific gravity (N/m<sup>3</sup>)<br><b>p</b> = density (kg/m<sup>3</sup>)<br><b>g</b> = weight of object (N).</p>
+                            <p class="p-newton"><br>Description: <br><strong>F</strong> is the force (N)<br><strong>m</strong> is the mass of the object (kg) <br><strong>a</strong> is the acceleration (m/s<sup>2</sup>).<br></p>
+                            <p class="example-question" onclick="thirdquestion()">View example questions</p>
+                        </div>
+
+                        <div class="first-example">
+                            <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+                            <div class="popup-first" id="popup-first">
+                                <button class="close-btn-quest" onclick="hidePopup()">Tutup</button>
+                                <h2>Physics Questions - Newton's 1st Law</h2>
+                                <p class="question-text">A block with a mass of 5 kg (weight w = 50 N) is hung by a rope tied to the roof. If the block is at rest, what is the tension in the rope?</p>
+                                
+                                <div class="clue-quest">
+                                    <p>Known: w = 50 N</p>
+                                    <p>Asked: T?</p>
+                                </div>
+                                <div class="your-answer">
+                                    <span><br><strong>Your Answer:</strong></span>
+                                    <span class="input-style"><input type="text" id="user-answer-1" class="user-answer" placeholder="Type your answer..."/><span class="textcontent">N</span></span>
+                                    <button class="submit-btn" onclick="firstsubmit()">Submit</button>
+                                </div>
+
+                                <div class="correct-answer">
+                                    <p id="correctanswer"><span class="answer-correct">Correct Answer</span> : 50N</p>
+                                </div>
+                                
+                                <div class="correct-discussion">
+                                    <p id="correctdiscuss"><strong>Discussion : </strong><br>ΣF = 0<br>T – w = 0<br>T – 50 = 0<br>T = 50 N</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="second-example">
+                            <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+                            <div class="popup-second" id="popup-second">
+                                <button class="close-btn-quest" onclick="hidePopup()">Tutup</button>
+                                <h2>Physics Questions - Newton's 2st Law</h2>
+                                <p class="question-text">A ball with a mass of 450 grams is pushed with a force of 2 N. As a result, the object that was originally still becomes moving. The acceleration of the object's motion is</p>
+                                
+                                <div class="clue-quest">
+                                    <p>m = 450 grams = 0.45 kilograms, F = 2N</p>
+                                    <p>Asked: a?</p>
+                                    <span class="help-commas">If your answer is a decimal, round to two decimal places</span>
+                                </div>
+                                <div class="your-answer">
+                                    <span><br><strong>Your Answer:</strong></span>
+                                    <span class="input-style"><input type="text" id="user-answer-2" class="user-answer" placeholder="Type your answer..."/><span class="textcontent">m/s<sup>2</sup></span></span>
+                                    <button class="submit-btn" onclick="secondsubmit()">Submit</button>
+                                </div>
+
+                                <div class="correct-answer">
+                                    <p id="correctanswer-1"><span class="answer-correct">Correct Answer</span> : 4.44 m/s<sup>2</sup></p>
+                                </div>
+                                
+                                <div class="correct-discussion">
+                                    <p id="correctdiscuss-1"><strong>Discussion : </strong><br>F = m.a<br>2 = 0.45<br>2 / 0.45 = a<br>4.44 = a<br>a = 4.44 m/s<sup>2</sup></sup></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="third-example">
+                            <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+                            <div class="popup-third" id="popup-third">
+                                <button class="close-btn-quest" onclick="hidePopup()">Tutup</button>
+                                <h2>Physics Questions - Newton's 3st Law</h2>
+                                <p class="question-text">A rocket with a mass of 1000 kg is launched into space. When the rocket releases gas from its engine at a speed of 500 m/s, the force generated is 5000 N. What is the reaction force generated by the rocket?</p>
+                                
+                                <div class="clue-quest">
+                                    <p>F<sub>action</sub> = 5000N, m = 1000 kg</p>
+                                    <p>Asked: F<sub>reaction</sub>?</p>
+                                    <span class="help-commas">If your answer is a decimal, round to two decimal places</span>
+                                </div>
+
+                                <div class="your-answer">
+                                    <span><br><strong>Your Answer:</strong></span>
+                                    <span class="input-style"><input type="text" id="user-answer-3" class="user-answer" placeholder="Type your answer..."/><span class="textcontent">N</span></span>
+                                    <button class="submit-btn" onclick="thirdsubmit()">Submit</button>
+                                </div>
+
+                                <div class="correct-answer">
+                                    <p id="correctanswer-2"><span class="answer-correct">Correct Answer</span> : -5000 N</p>
+                                </div>
+                                
+                                <div class="correct-discussion">
+                                    <p id="correctdiscuss-2"><br><strong>Discussion : </strong><br><b>First, you need to calculate the acceleration of the rocket produced by the gas released from its engine using Newton's Second Law.</b><br>F = m ✕ a<br>5000 N = 1000 kg ✕ a <br>a = 5 m/s<sup>2</sup><br><br><b>Next, you can calculate the reaction force generated by the rocket using Newton's 3rd Law:</b><br>F<sub>action</sub> = - F<sub>reaction</sub><br>F<sub>action</sub> = force generated by the gas from the rocket engine = 5000 N<br>F<sub>reaction</sub> = the reaction force generated by the rocket<br>F<sub>reaction</sub> = m ✕ a<br>F<sub>reaction</sub> = 1000 ✕ -5 <span class="help-commas">Because the direction of the reaction force is opposite to the direction of the rocket's motion</span><br>F<sub>reaction</sub> = -5000N </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <!-- Repeat for other topics (Kinematics and Momentum) -->
+                
+                <div class="simulation-choice">
+                    <div class="container-choice">
+                        <span class="name-material">Kinematics</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="close-btn" onclick="closeTooltip()">✕</span>
+                        <h2>Kinematics</h2>
+                        <p>Kinematics focuses on the description of motion without regard to the forces causing it. Basic kinematic equations include:</p>
+                        <p><strong>s = v₀ * t + 0.5 * a * t²</strong></p>
+                        <p>Where:</p>
+                        <ul>
+                            <li><strong>s</strong> = displacement (m)</li>
+                            <li><strong>v₀</strong> = initial velocity (m/s)</li>
+                            <li><strong>t</strong> = time (s)</li>
+                            <li><strong>a</strong> = acceleration (m/s²)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Kotak pilihan untuk Momentum -->
+                <div class="simulation-choice">
+                    <div class="container-choice">
+                        <span class="name-material">Momentum</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="close-btn" onclick="closeTooltip()">✕</span>
+                        <h2>Momentum</h2>
+                        <p>Momentum measures the quantity of motion in an object, a function of its mass and velocity. Momentum remains conserved in a closed system. The formula is:</p>
+                        <p><strong>p = m * v</strong></p>
+                        <p>Where:</p>
+                        <ul>
+                            <li><strong>p</strong> = momentum (kg m/s)</li>
+                            <li><strong>m</strong> = mass (kg)</li>
+                            <li><strong>v</strong> = velocity (m/s)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Style untuk popup */
+.popup-first{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor: default;
+}
+
+.popup-second{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor: default;
+}
+
+.popup-third{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor: default;
+}
+
+.popup-first h2{
+    font-size: 21px;
+    margin-bottom:20px;
+    margin-top: 10px;
+    color:rgb(5, 33, 4);
+}
+
+.popup-third h2{
+    font-size: 21px;
+    margin-bottom:20px;
+    margin-top: 10px;
+    color:rgb(5, 33, 4);
+}
+
+.popup-second h2{
+    font-size: 21px;
+    margin-bottom:20px;
+    margin-top: 10px;
+    color:rgb(5, 33, 4);
+}
+
+.question-text{
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Style untuk overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+/* Style untuk close button */
+.close-btn-quest {
+    color: rgb(70, 70, 70);
+    padding: 0px 0px;
+    border:none;
+    background-color:white;
+    cursor: pointer;
+    float: right;
+    margin-bottom:20px;
+    margin-top: 10px;
+}
+
+.correct-answer {
+    text-align: left;
+    font-size: 14px;
+}
+
+.correct-discussion{
+    text-align: left;
+    font-size: 14px;
+}
+
+#correctdiscuss{
+    display: none;
+}
+
+#correctdiscuss-1{
+    display: none;
+}
+
+#correctdiscuss-2{
+    display: none;
+}
+
+
+#correctanswer{
+    display:none;
+}
+
+#correctanswer-1{
+    display:none;
+}
+
+#correctanswer-2{
+    display:none;
+}
+
+
+.answer-correct{
+    color: darkgreen;
+    font-weight: bold;
+    text-align: left;
+}
+
+.textcontent{
+    color:rgb(47, 47, 47);
+    font-size: 12px;
+}
+
+.submit-btn{
+    border:none;
+    background-color: rgb(47, 47, 47);
+    color:white;
+    padding:12px 12px;
+    margin-left:2px;
+    border-radius: 10px 10px;
+}
+
+.your-answer{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.clue-quest{
+    color:rgb(89, 89, 89);
+    margin-top: 5px;
+    font-size:14px;
+    text-align: left;
+}
+
+.input-style{
+    border:1px solid rgb(130, 130, 130);
+    margin-left: 5px;
+    margin-right: 3px;
+    border-radius: 10px 10px;
+    padding:10px 10px;
+}
+
+.user-answer{
+    color:rgb(37, 37, 37);
+    border:none;
+    background:white;
+}
+
+.user-answer:focus{
+    outline: none;
+    border: none;
+}
+
+.help-commas{
+    color:#740606;
+    font-size: 12px;
+}
